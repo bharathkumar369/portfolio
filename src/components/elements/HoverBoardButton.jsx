@@ -8,9 +8,9 @@ const HoverBoardButton = () => {
             <HoverBorderGradient
                 containerClassName="rounded-full"
                 as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                className="dark:bg-myOrange bg-white text-black dark:text-black flex items-center space-x-2"
             >
-                <span className="px-5 font-medium">Explore</span>
+                <span className="px-5 font-bold">Explore</span>
             </HoverBorderGradient>
         </div>
     )

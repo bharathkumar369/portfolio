@@ -12,7 +12,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode:"class",
+  // darkMode:"class",
   theme: {
     extend: {
       backgroundImage: {
@@ -20,8 +20,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        myOrange:"#e98141"
+      },
       animation:{
-        aurora: "aurora 60s linear infinite",
+        aurora: "aurora 30s linear infinite",
       },
       keyframes:{
         aurora: {

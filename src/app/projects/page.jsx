@@ -53,7 +53,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Digital Revolution",
+    title: "url shortening",
     description: "Dive into the transformative power of technology.",
     header: <Skeleton />,
     image:<Image src={url}/>,
@@ -66,7 +66,7 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Power of Communication",
+    title: "Ecommerce page",
     description:
       "Understand the impact of effective communication in our lives.",
     header: <Skeleton />,
@@ -80,13 +80,13 @@ const items = [
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Joy of Creation",
+    title: "Jobs search",
     description: "Experience the thrill of bringing ideas to life.",
     header: <Skeleton />,
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "The Spirit of Adventure",
+    title: "Jobs Search",
     description: "Embark on exciting journeys and thrilling discoveries.",
     header: <Skeleton />,
     image:<Image src={jobs} className=" w-[100%] h-[150px]"/>,

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import React from "react";
+import React,{useEffect} from "react";
 import { BentoGrid, BentoGridItem } from "../../components/ui/bento-grid";
 import {
   IconArrowWaveRightUp,
@@ -20,6 +20,7 @@ import url from "../../../public/url-short.png";
 import Link from "next/link";
 
 const Projects = () => {
+ 
     return(
         <BentoGrid className="max-w-4xl mx-auto mt-44">
             {items.map((item, i) => (
@@ -38,7 +39,7 @@ const Projects = () => {
     );
 }
 const Skeleton = () => (
-      <Link to={button}>
+      <Link href={button}>
           <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
           
           </div>
@@ -70,7 +71,7 @@ const items = [
     description:
       "Understand the impact of effective communication in our lives.",
     header: <Skeleton />,
-    image:<Image src={ecommerce} className=" w-[100%] h-[150px]"/>,
+    image:<Image src={ecommerce} className="w-[100%] h-[150px]"/>,
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {

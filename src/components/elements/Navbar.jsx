@@ -9,7 +9,7 @@ const Navbar = ({ className }) => {
 
     return(
         <main
-            className={cn("fixed top-10 text-myOrange inset-x-0 max-w-2xl mx-auto z-50 text-bold border-myOrange", className)}
+            className={cn("fixed top-10 text-myOrange inset-x-0 max-w-2xl mx-auto z-50 text-bold ", className)}
         >
             <Menu setActive={setActive} active={active}>
                 <HoveredLink href="/">Home</HoveredLink>

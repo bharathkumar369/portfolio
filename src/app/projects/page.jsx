@@ -22,6 +22,7 @@ import gsap from "gsap";
 import github from "../../../public/github.png"
 import space from "../../../public/space.png"
 import { useGSAP } from "@gsap/react";
+import dictionary from "../../../public/dictionary.png"
 
 
 const Projects = () => {
@@ -83,7 +84,7 @@ const items = [
           )
   },
   {
-    title: "The Art of Design",
+    title: "Space Tourism",
     description: "Discover the beauty of thoughtful and functional design.",
     header: <Skeleton />,
     image:(
@@ -112,10 +113,19 @@ const items = [
           )
   },
   {
-    title: "The Pursuit of Knowledge",
+    title: "Dictionary",
     description: "Join the quest for understanding and enlightenment.",
     header: <Skeleton />,
-    icon: <Image src={github} alt="github" className="h-10 w-10 cursor-pointer"/>
+    image:(
+            <Link href="https://dictionary-rouge-eight.vercel.app/">
+                <Image src={dictionary} className="w-[100%] h-[150px]"/>
+            </Link>
+          ),
+    icon: (
+            <Link href="https://github.com/bharathkumar369/Dictionary">
+              <Image src={github} alt="github" className="h-10 w-10 cursor-pointer" />
+            </Link>
+          )
   },
   // {
   //   title: "Jobs search",

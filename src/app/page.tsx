@@ -7,7 +7,8 @@ import React from "react";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import HoverBoardButton from "../components/elements/HoverBoardButton"
 import Image from "next/image";
-import heropic from "../../public/heropic.png"
+import heropic from "../../public/kid1.png"
+
 
 const Home = () =>{
   return(

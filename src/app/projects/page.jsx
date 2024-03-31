@@ -27,10 +27,10 @@ import dictionary from "../../../public/dictionary.png"
 
 const Projects = () => {
     useGSAP(()=>{
-      gsap.from(".bento",{y:-100,delay:1,ease:"out"})
+      gsap.to(".bento",{y:150,duration:2,opacity:1})
     },[])
     return(
-        <BentoGrid className="  max-w-4xl mx-auto mt-44">
+        <BentoGrid className=" bento max-w-4xl mx-auto">
             {items.map((item, i) => (
                 <BentoGridItem
                 key={i}

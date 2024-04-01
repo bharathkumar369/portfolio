@@ -4,11 +4,14 @@
  
 import { motion } from "framer-motion";
 import React from "react";
-import { AuroraBackground } from "../components/ui/aurora-background";
+//import { AuroraBackground } from "../components/ui/aurora-background";
 import HoverBoardButton from "../components/elements/HoverBoardButton"
 import Image from "next/image";
-import heropic from "../../public/kid1.png"
+import heropic from "../../public/19362653.png"
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+// import Projects from "./projects/page";
+// import About from "./about/page"
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 
 const Home = () =>{
@@ -33,8 +36,7 @@ const Home = () =>{
   ]
 
   return(
-    <main className="flex flex-col">
-      <AuroraBackground className="flex flex-row">
+    <main className="flex flex-row mt-[10rem]">
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -53,6 +55,7 @@ const Home = () =>{
             </div>
             <HoverBoardButton/>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0.0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -63,13 +66,12 @@ const Home = () =>{
             }}
             className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
           >
-          <div>
-            <Image src={heropic} alt="heroPic"/>
-          </div>
+            <div>
+              <Image src={heropic} alt="heroPic"/>
+            </div>
           </motion.div>
-
-        </AuroraBackground>
-
+          
+          <BackgroundBeams/> 
     </main>
 
   )

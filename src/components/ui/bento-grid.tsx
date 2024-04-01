@@ -1,5 +1,5 @@
 import { cn } from "@/utils/cn";
-
+import { easeOut, motion } from "framer-motion";
 
 export const BentoGrid = ({
   
@@ -40,7 +40,10 @@ export const BentoGridItem = ({
   button?:String;
 }) => {
   return (
-    <div
+    <motion.div
+
+      animate= {{y:100}}
+      transition={{ ease:"easeOut",duration:0.8,}}
       className={cn(
         "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-myOrange bg-white border border-transparent justify-between flex flex-col space-y-4",
         className,
@@ -52,8 +55,16 @@ export const BentoGridItem = ({
         </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         <section className="flex flex-row">
-          <div>{icon}</div>
-          <button className="border-myOrange">{button}</button>
+          <motion.button 
+            className="border-myOrange"
+            whileHover={{
+              scale:[null,1.4,1.5]
+            }}
+            transition={{duration:0.3}}
+          >
+            {icon}
+          </motion.button>
+          <div>{button}</div>
         </section>
         <div className="font-sans font-bold text-myOrange dark:text-myOrange mb-2 mt-5">
           {title}
@@ -62,6 +73,6 @@ export const BentoGridItem = ({
           {description}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

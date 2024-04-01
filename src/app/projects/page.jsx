@@ -18,33 +18,29 @@ import ecommerce from "../../../public/ecommerce-page.png"
 import jobs from "../../../public/jobs.png"
 import url from "../../../public/url-short.png";
 import Link from "next/link";
-import gsap from "gsap";
+import { motion } from "framer-motion";
 import github from "../../../public/github.png"
 import space from "../../../public/space.png"
-import { useGSAP } from "@gsap/react";
+
 import dictionary from "../../../public/dictionary.png"
 
 
 const Projects = () => {
-    useGSAP(()=>{
-      gsap.to(".bento",{y:150,duration:2,opacity:1})
-    },[])
+
     return(
-        <BentoGrid className=" bento max-w-4xl mx-auto">
-            {items.map((item, i) => (
-                <BentoGridItem
-                key={i}
-                title={item.title}
-                description={item.description}
-                header={item.header}
-                image={item.image}
-                button={item.button}
-                className=""
-                icon={item.icon}
-                />
-                
-            ))}
-        </BentoGrid>
+          <BentoGrid className=" bento max-w-4xl mx-auto">
+              {items.map((item, i) => (
+                    <BentoGridItem
+                      title={item.title}
+                      description={item.description}
+                      header={item.header}
+                      image={item.image}
+                      button={item.button}
+                      className=""
+                      icon={item.icon}
+                    />
+              ))}
+          </BentoGrid>
     );
 }
 const Skeleton = () => (

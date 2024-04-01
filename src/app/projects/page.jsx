@@ -28,7 +28,7 @@ import dictionary from "../../../public/dictionary.png"
 const Projects = () => {
 
     return(
-          <BentoGrid className=" bento max-w-4xl mx-auto">
+          <BentoGrid className=" bento max-w-4xl mx-auto h-full">
               {items.map((item, i) => (
                     <BentoGridItem
                       key={i}

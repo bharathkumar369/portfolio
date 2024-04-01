@@ -11,8 +11,8 @@ const words = "As a self-taught web developer, I possess a diverse skill set spa
 
 const About = () => {
     return (
-        <main className="mt-48 p-9 flex flex-row  justify-center">
-           {/* <motion.div
+        <main className="mt-48 p-9 flex flex-row h-full justify-center">
+           <motion.div
             initial={{ opacity: 0.0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -22,13 +22,12 @@ const About = () => {
             }}
             className="w-1/2"
            >
-            <div><Image src={about} alt="about"/></div></motion.div>  */}
-            <div className="max-w-screen-lg mx-auto text-right" style={{ wordWrap: 'break-word' }}>
-                <pre>
-                    <TextGenerateEffect words={words}/>
-                </pre>
+            <div><Image src={about} alt="about"/></div></motion.div> 
+            
+            <div className="w-1/2" >
+                <TextGenerateEffect words={words}/>
             </div>
-    
+            
         </main>
     )
 }   

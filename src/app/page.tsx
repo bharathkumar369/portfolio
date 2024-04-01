@@ -1,79 +1,80 @@
 //import Aurora from "@/components/elements/Aurora";
 
 "use client";
- 
+
 import { motion } from "framer-motion";
 import React from "react";
 //import { AuroraBackground } from "../components/ui/aurora-background";
-import HoverBoardButton from "../components/elements/HoverBoardButton"
+import HoverBoardButton from "../components/elements/HoverBoardButton";
 import Image from "next/image";
-import heropic from "../../public/19362653.png"
+import heropic from "../../public/19362653.png";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
-// import Projects from "./projects/page";
-// import About from "./about/page"
+import Projects from "./projects/page";
+import About from "./about/page";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import Link from "next/link";
 
-
-const Home = () =>{
-
+const Home = () => {
   const words = [
     {
-      text:"I'm",
-      className:"text-[2rem]"
+      text: "I'm",
+      className: "text-[2rem]",
     },
     {
-      text:"a",
-      className:"text-[2rem]"
+      text: "a",
+      className: "text-[2rem]",
     },
     {
-      text:"Freelance",
-      className:"text-[2rem]"
+      text: "Freelance",
+      className: "text-[2rem]",
     },
     {
-      text:"Web-Developer",
-      className: 'text-myOrange dark:text-myOrange text-[2.5rem]'
+      text: "Web-Developer",
+      className: "text-myOrange dark:text-myOrange text-[2.5rem]",
     },
-  ]
+  ];
 
-  return(
-    <main className="flex flex-row mt-[10rem]">
-          <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 0.8,
-              ease: "easeInOut",
-            }}
-            className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
-          >
-            <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
-              Welcome to my WORLD!
-            </div>
-            <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
-              <TypewriterEffect words={words}/>
-            </div>
-            <HoverBoardButton/>
-          </motion.div>
+  return (
+    <main className="flex flex-col mt-[12rem]">
+      <section className="flex flex-row ">
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
+        >
+          <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+            Welcome to my WORLD!
+          </div>
+          <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
+            <TypewriterEffect words={words} />
+          </div>
+          <Link href="/about">
+            <HoverBoardButton />
+          </Link>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0.0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 2,
+            ease: "easeInOut",
+          }}
+          className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
+        >
+          <div>
+            <Image src={heropic} alt="heroPic" />
+          </div>
+        </motion.div>
+      </section>
 
-          <motion.div
-            initial={{ opacity: 0.0, y: -40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.3,
-              duration: 2,
-              ease: "easeInOut",
-            }}
-            className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
-          >
-            <div>
-              <Image src={heropic} alt="heroPic"/>
-            </div>
-          </motion.div>
-          
-          <BackgroundBeams/> 
+      <BackgroundBeams />
     </main>
-
-  )
-}
+  );
+};
 export default Home;

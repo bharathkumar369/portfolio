@@ -11,6 +11,7 @@ import heropic from "../../public/19362653.png";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import Projects from "./projects/page";
 import About from "./about/page";
+import Skills from "./skills/page";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Link from "next/link";
 
@@ -35,8 +36,9 @@ const Home = () => {
   ];
 
   return (
-    <main className="flex flex-col mt-[12rem]">
-      <section className="flex flex-row ">
+    <main className="flex flex-col w-full  snap-y snap-mandatory">
+      <section className="flex flex-col sm:flex-row sm:mt-[2rem] h-lvh">
+        
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,21 +59,31 @@ const Home = () => {
             <HoverBoardButton />
           </Link>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 2,
-            ease: "easeInOut",
-          }}
+
+          // exit={{opacity:0, y:0}}
+
+
           className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
         >
-          <div>
-            <Image src={heropic} alt="heroPic" />
-          </div>
+            <Image src={heropic} alt="heroPic" className="w-full "/>
         </motion.div>
       </section>
+
+      {/* <section className="h-lvh snap-start">
+        <About/>
+      </section>
+
+      <section className="h-lvh snap-start">
+        <Projects/>
+      </section>
+      
+      <section className="h-lvh snap-start">
+        <Skills/>
+      </section> */}
 
       <BackgroundBeams />
     </main>

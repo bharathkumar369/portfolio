@@ -36,7 +36,7 @@ const Home = () => {
   ];
 
   return (
-    <main className="flex flex-col w-full  snap-y snap-mandatory">
+    <main className="flex flex-col w-full snap-y snap-mandatory">
       <section className="flex flex-col sm:flex-row sm:mt-[2rem] h-lvh">
         
         <motion.div
@@ -47,7 +47,7 @@ const Home = () => {
             duration: 2,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
+          className="relative flex flex-col gap-2 mt-[7rem] items-center justify-center px-4 w-full sm:w-1/2"
         >
           <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
             Welcome to my WORLD!
@@ -69,7 +69,7 @@ const Home = () => {
             ease: "easeInOut",
           }}
 
-          className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
+          className="relative flex flex-col gap-4 items-center justify-center px-4 w-full sm:w-1/2"
         >
             <Image src={heropic} alt="heroPic" className="w-full "/>
         </motion.div>

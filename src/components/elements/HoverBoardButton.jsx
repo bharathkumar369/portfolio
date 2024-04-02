@@ -4,7 +4,7 @@ import { HoverBorderGradient } from "../ui/hover-board-gradient"
 
 const HoverBoardButton = () => {
     return(
-        <div className="m-40 flex justify-center text-center">
+        <div className="m-5 sm:m-30 sm:w-full  flex justify-center text-center">
             <HoverBorderGradient
                 containerClassName="rounded-full"
                 as="button"

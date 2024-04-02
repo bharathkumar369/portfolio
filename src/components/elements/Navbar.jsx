@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
+//import Link from "next/link";
+import { HoveredLink, Menu, } from "../ui/navbar-menu";
 import { cn } from "@/utils/cn";
 
 const Navbar = ({ className }) => {
@@ -27,7 +27,7 @@ export default Navbar
 // const Navbar = () => {
 //     return (
 //         <main className="">
-//             <section className="fixed top-10 text-white inset-x-0 max-w-lg mx-auto z-45 text-bold border flex flex-row gap-3 justify-between px-9 py-3 rounded-full">
+//             <section className="flex flex-row gap-4 w-2/5 mx-auto border border-white rounded-full items-center justify-center py-2 mt-4">
 //                 <Link href="/">
 //                     <h1>Home</h1>
 //                 </Link>

@@ -37,28 +37,28 @@ const testimonials = [
     },
     {
         image:<Image src={css} alt="css"/>
-      },
-      {
+    },
+    {
         image:<Image src={js} alt="js"/>
-      },
-      {
+    },
+    {
         image:<Image src={react} alt="react"/>
-      },
-      {
+    },
+    {
         image:<Image src={node} alt="node"/>
-      },
-      {
+    },
+    {
         image:<Image src={express} alt="express"/>
-      },
-      {
-        image:<Image src={mongo} alt="mongo"/>
-      },
-      {
+    },
+    {
+     image:<Image src={mongo} alt="mongo"/>
+    },
+    {
         image:<Image src={tailwind} alt="tailwind"/>
-      },
-      {
-        image:<Image src={next} alt="next"/>
-      },
+    },
+    {
+     image:<Image src={next} alt="next"/>
+    },
 
     // {
     //   quote:

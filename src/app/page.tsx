@@ -47,12 +47,12 @@ const Home = () => {
             duration: 2,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col gap-2 mt-[7rem] items-center justify-center px-4 w-full sm:w-1/2"
+          className="relative flex flex-col gap-6 mt-[7rem] items-center justify-center px-4 w-full sm:w-1/2"
         >
           <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
             Welcome to my WORLD!
           </div>
-          <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
+          <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 ">
             <TypewriterEffect words={words} />
           </div>
           <Link href="/about">

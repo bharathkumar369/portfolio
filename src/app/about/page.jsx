@@ -13,7 +13,7 @@ const About = () => {
   return (
     <main className="mt-32 p-9 flex flex-col gap-10 h-full justify-center">
       {/* <center>ABOUT</center> */}
-      <section className="flex flex-row">
+      <section className="flex flex-col sm:flex-col gap-10 sm:gap-2">
         <motion.div
           initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,14 +22,14 @@ const About = () => {
             duration: 2,
             ease: "easeInOut",
           }}
-          className="w-1/2"
+          className="w-full sm:w-1/2 order-2"
         >
           <div>
             <Image src={about} alt="about" />
           </div>
         </motion.div>
 
-        <div className="w-1/2">
+        <div className="w-full sm:w-1/2">
           <TextGenerateEffect words={words} />
         </div>
       </section>

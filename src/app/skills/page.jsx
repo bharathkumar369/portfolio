@@ -24,7 +24,7 @@ const Skills = () =>{
                 <InfiniteMovingCards
                     items={testimonials}
                     direction="right"
-                    speed="medium"
+                    speed="fast"
                 />
             </div>
             <BackgroundBeams/>

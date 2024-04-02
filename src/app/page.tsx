@@ -40,11 +40,11 @@ const Home = () => {
       <section className="flex flex-col sm:flex-row sm:mt-[2rem] h-lvh">
         
         <motion.div
-          initial={{ opacity: 0.0, y: 40 }}
+          initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0.3,
-            duration: 0.8,
+            duration: 2,
             ease: "easeInOut",
           }}
           className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
@@ -63,9 +63,11 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
-
-          // exit={{opacity:0, y:0}}
-
+          transition={{
+            delay: 0.3,
+            duration: 2,
+            ease: "easeInOut",
+          }}
 
           className="relative flex flex-col gap-4 items-center justify-center px-4 w-1/2"
         >

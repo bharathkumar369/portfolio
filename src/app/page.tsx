@@ -14,6 +14,7 @@ import About from "./about/page";
 import Skills from "./skills/page";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Link from "next/link";
+import Contact from "./contact/page";
 
 const Home = () => {
   const words = [
@@ -52,7 +53,7 @@ const Home = () => {
           <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
             Welcome to my WORLD!
           </div>
-          <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4 ">
+          <div className="font-extralight text-base md:text-4xl dark:text-neutral-200 py-4">
             <TypewriterEffect words={words} />
           </div>
           <Link href="/about">
@@ -73,21 +74,28 @@ const Home = () => {
         >
             <Image src={heropic} alt="heroPic" className="w-full "/>
         </motion.div>
-      </section>
 
-      {/* <section className="h-lvh snap-start">
+      </section>
+      <Contact/>
+      {/* <section className="h-lvh snap-start " >
         <About/>
       </section>
 
-      <section className="h-lvh snap-start">
+      <section className="sm:h-lvh snap-start">
         <Projects/>
       </section>
       
       <section className="h-lvh snap-start">
         <Skills/>
+        <Contact/>
+      </section>
+
+      <section>
+        
       </section> */}
 
       <BackgroundBeams />
+
     </main>
   );
 };

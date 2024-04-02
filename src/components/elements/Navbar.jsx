@@ -16,7 +16,7 @@ const Navbar = ({ className }) => {
                 <HoveredLink href="/">Home</HoveredLink>
                 <HoveredLink href="/skills">Skills</HoveredLink>
                 <HoveredLink href="/about">About</HoveredLink>
-                <HoveredLink href="/contact">Contact</HoveredLink>
+                {/* <HoveredLink href="/contact">Contact</HoveredLink> */}
                 <HoveredLink href="/projects">Projects</HoveredLink>
             </Menu>
         </main>

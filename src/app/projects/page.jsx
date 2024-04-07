@@ -51,7 +51,7 @@ const Skeleton = () => (
 const items = [
   {
     title: "Countries with RESTapi",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    description: "whole app craeated with RESTful api with react router",
     header: <Skeleton />,
     image: (
       <Link href="https://countries-rest-api-kappa.vercel.app/">
@@ -66,7 +66,7 @@ const items = [
   },
   {
     title: "url shortening",
-    description: "Dive into the transformative power of technology.",
+    description: "landing page with url shortening api",
     header: <Skeleton />,
     image: (
       <Link href="https://url-shortening-chi.vercel.app/">
@@ -81,7 +81,7 @@ const items = [
   },
   {
     title: "Space Tourism",
-    description: "Discover the beauty of thoughtful and functional design.",
+    description: "first web app using react-router.",
     header: <Skeleton />,
     image: (
       <Link href="https://spacetourism-kappa.vercel.app/">
@@ -101,7 +101,7 @@ const items = [
   {
     title: "Ecommerce page",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "simple e-commerce page with dynamic updating",
     header: <Skeleton />,
     image: (
       <Link href="https://ecommerce-product-page-sigma-lilac.vercel.app/">
@@ -116,7 +116,7 @@ const items = [
   },
   {
     title: "Dictionary",
-    description: "Join the quest for understanding and enlightenment.",
+    description: "my first dictionary app using axios and RESTful Api",
     header: <Skeleton />,
     image: (
       <Link href="https://dictionary-rouge-eight.vercel.app/">
@@ -137,7 +137,7 @@ const items = [
   // },
   {
     title: "Jobs Search",
-    description: "Embark on exciting journeys and thrilling discoveries.",
+    description: "simple jobs searching page using grid/flex and utilizing gsap animations",
     header: <Skeleton />,
     image: (
       <Link href="https://job-listing-lake-nine.vercel.app/">

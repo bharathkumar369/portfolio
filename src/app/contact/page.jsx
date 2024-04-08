@@ -9,7 +9,7 @@ import Link from "next/link";
 const Contact = () => {
     return(
         
-        <footer className="w-2/5 mx-auto mt-[-100px] flex flex-row gap-5 items-center justify-center">
+        <main className="w-2/5 mx-auto mt-[10px] flex flex-row gap-5 items-center justify-center">
             <Link href="mailto:bharathpathapati@gmail.com">
                 <Image src={gmail} alt="gmail" className="h-10 w-10"/>
             </Link>
@@ -19,7 +19,7 @@ const Contact = () => {
             <Link href="https://twitter.com/bharathkumar693">
                 <Image src={x} alt="x" className="h-16 w-16"/>
             </Link>
-        </footer>
+        </main>
     )
 }
 export default Contact;

@@ -38,8 +38,7 @@ const Home = () => {
 
   return (
     <main className="flex flex-col w-full snap-y snap-mandatory">
-      <section className="flex flex-col sm:flex-row sm:mt-[2rem] h-lvh">
-        
+      <section className="flex flex-col sm:flex-row sm:mt-[1rem] h-svh">
         <motion.div
           initial={{ opacity: 0.0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -69,14 +68,14 @@ const Home = () => {
             duration: 2,
             ease: "easeInOut",
           }}
-
           className="relative flex flex-col gap-4 items-center justify-center px-4 w-full sm:w-1/2"
         >
-            <Image src={heropic} alt="heroPic" className="w-full "/>
+          <Image src={heropic} alt="heroPic" className="w-full " />
         </motion.div>
-
       </section>
-      <Contact/>
+      <section className="">
+          <Contact />
+        </section>
       {/* <section className="h-lvh snap-start " >
         <About/>
       </section>
@@ -95,7 +94,6 @@ const Home = () => {
       </section> */}
 
       <BackgroundBeams />
-
     </main>
   );
 };
